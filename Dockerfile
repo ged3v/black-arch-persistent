@@ -2,7 +2,7 @@ FROM blackarchlinux/blackarch:latest
 
 # Install packages
 RUN pacman -Syu --noconfirm && \
-    pacman -S --noconfirm fastfetch nmap python metasploit aircrack-ng sudo
+    pacman -S --noconfirm fastfetch sqlmap vim nmap python metasploit aircrack-ng sudo
 
 # Create user
 ARG USERNAME=hacker
