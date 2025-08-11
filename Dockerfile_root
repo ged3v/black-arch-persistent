@@ -1,0 +1,8 @@
+FROM blackarchlinux/blackarch:latest
+
+RUN pacman -Syu --noconfirm && \
+    pacman -S --noconfirm nmap python metasploit aircrack-ng
+   
+WORKDIR /root
+CMD ["/bin/bash"]
+
